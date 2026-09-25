@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="65%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#1f1a2e" />
+      <stop offset="50%" stop-color="#0e0f17" />
+      <stop offset="100%" stop-color="#06070a" />
+    </radialGradient>
+
+    <!-- Imperial Gold Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fae29c" />
+      <stop offset="35%" stop-color="#dfaa53" />
+      <stop offset="70%" stop-color="#b67f2b" />
+      <stop offset="100%" stop-color="#fdf0be" />
+    </linearGradient>
+
+    <!-- Bronze Amber Inner -->
+    <linearGradient id="amberGrad" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e08a3c" />
+      <stop offset="50%" stop-color="#8c4710" />
+      <stop offset="100%" stop-color="#f3b865" />
+    </linearGradient>
+
+    <!-- Shadow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Rectangle for App Icon -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGlow)" />
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="url(#goldGrad)" stroke-width="3" opacity="0.6" />
+
+  <!-- Outer Astrolabe Heaven Ring -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" opacity="0.4" stroke-dasharray="6 8" />
+  <circle cx="256" cy="256" r="192" fill="none" stroke="url(#goldGrad)" stroke-width="4" opacity="0.75" />
+
+  <!-- 8 Bagua Trigram Directions Markers -->
+  <g stroke="url(#goldGrad)" stroke-width="2" opacity="0.7">
+    <!-- Qian (Heaven) - North -->
+    <line x1="240" y1="72" x2="272" y2="72" />
+    <line x1="240" y1="78" x2="272" y2="78" />
+    <line x1="240" y1="84" x2="272" y2="84" />
+
+    <!-- Kun (Earth) - South -->
+    <line x1="240" y1="428" x2="252" y2="428" /><line x1="260" y1="428" x2="272" y2="428" />
+    <line x1="240" y1="434" x2="252" y2="434" /><line x1="260" y1="434" x2="272" y2="434" />
+    <line x1="240" y1="440" x2="252" y2="440" /><line x1="260" y1="440" x2="272" y2="440" />
+
+    <!-- Li (Fire) - East -->
+    <line x1="428" y1="240" x2="428" y2="272" />
+    <line x1="434" y1="240" x2="434" y2="252" /><line x1="434" y1="260" x2="434" y2="272" />
+    <line x1="440" y1="240" x2="440" y2="272" />
+
+    <!-- Kan (Water) - West -->
+    <line x1="72" y1="240" x2="72" y2="252" /><line x1="72" y1="260" x2="72" y2="272" />
+    <line x1="78" y1="240" x2="78" y2="272" />
+    <line x1="84" y1="240" x2="84" y2="252" /><line x1="84" y1="260" x2="84" y2="272" />
+  </g>
+
+  <!-- 12 Earthly Branches Dials Tick Marks -->
+  <g stroke="url(#amberGrad)" stroke-width="2" opacity="0.6">
+    <circle cx="256" cy="256" r="162" fill="none" stroke="url(#amberGrad)" stroke-width="1.5" />
+    <!-- 12 Ray Nodes -->
+    <line x1="256" y1="94" x2="256" y2="108" />
+    <line x1="337" y1="115" x2="330" y2="127" />
+    <line x1="397" y1="175" x2="385" y2="182" />
+    <line x1="418" y1="256" x2="404" y2="256" />
+    <line x1="397" y1="337" x2="385" y2="330" />
+    <line x1="337" y1="397" x2="330" y2="385" />
+    <line x1="256" y1="418" x2="256" y2="404" />
+    <line x1="175" y1="397" x2="182" y2="385" />
+    <line x1="115" y1="337" x2="127" y2="330" />
+    <line x1="94" y1="256" x2="108" y2="256" />
+    <line x1="115" y1="175" x2="127" y2="182" />
+    <line x1="175" y1="115" x2="182" y2="127" />
+  </g>
+
+  <!-- Central Constellation Rays / Astrolabe Diamond Points -->
+  <polygon points="256,120 266,246 392,256 266,266 256,392 246,266 120,256 246,246" fill="url(#goldGrad)" opacity="0.22" filter="url(#glow)" />
+
+  <!-- Yin-Yang Taiji Center Disc -->
+  <g transform="translate(256, 256) scale(1.15)">
+    <!-- Base Outer Golden Ring -->
+    <circle cx="0" cy="0" r="80" fill="#0d0e14" stroke="url(#goldGrad)" stroke-width="4" filter="url(#glow)" />
+
+    <!-- Yin (Dark) side with gold edge -->
+    <path d="M 0,-76 A 76,76 0 0,1 0,76 A 38,38 0 0,1 0,0 A 38,38 0 0,0 0,-76 Z" fill="url(#goldGrad)" />
+    <!-- Yang (Light) side -->
+    <path d="M 0,76 A 76,76 0 0,1 0,-76 A 38,38 0 0,1 0,0 A 38,38 0 0,0 0,76 Z" fill="#0f1018" />
+
+    <!-- Yang Dot inside Yin -->
+    <circle cx="0" cy="-38" r="11" fill="#0f1018" stroke="url(#goldGrad)" stroke-width="2" />
+    <!-- Yin Dot inside Yang -->
+    <circle cx="0" cy="38" r="11" fill="url(#goldGrad)" />
+
+    <!-- Center Pivot Jewel -->
+    <circle cx="0" cy="0" r="7" fill="#fdf0be" filter="url(#glow)" />
+  </g>
+
+  <!-- Four Golden Four-Point Stars / ZiWei Emperor Stars -->
+  <!-- Top-Right -->
+  <path d="M 370,140 Q 370,150 380,150 Q 370,150 370,160 Q 370,150 360,150 Q 370,150 370,140 Z" fill="url(#goldGrad)" filter="url(#glow)" />
+  <!-- Top-Left -->
+  <path d="M 142,140 Q 142,150 152,150 Q 142,150 142,160 Q 142,150 132,150 Q 142,150 142,140 Z" fill="url(#goldGrad)" filter="url(#glow)" />
+  <!-- Bottom-Right -->
+  <path d="M 370,362 Q 370,372 380,372 Q 370,372 370,382 Q 370,372 360,372 Q 370,372 370,362 Z" fill="url(#goldGrad)" filter="url(#glow)" />
+  <!-- Bottom-Left -->
+  <path d="M 142,362 Q 142,372 152,372 Q 142,372 142,382 Q 142,372 132,372 Q 142,372 142,362 Z" fill="url(#goldGrad)" filter="url(#glow)" />
+</svg>

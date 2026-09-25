@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Noto Serif TC', serif, system-ui, -apple-system, sans-serif;
+    background-color: #0c0d12;
+    color: #e5e5e5;
+  }
+}
+
+/* 典雅東方金石與星象細部裝飾 */
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #f7d58b 0%, #d4a359 50%, #f3cb7c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.jade-gradient-text {
+  background: linear-gradient(135deg, #86efac 0%, #10b981 50%, #059669 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fire-gradient-text {
+  background: linear-gradient(135deg, #fca5a5 0%, #ef4444 50%, #b91c1c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 卷軸自定義樣式 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111319;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2b3040;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475069;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "易道乾坤 · 八字紫微運勢占卜系統",
+  "description": "融合《三命通會》、《滴天髓》與《窮通寶鑒》三部經典命學，結合精確農曆節氣排盤與紫微斗數十二宮，提供大運、事業、金錢、詳細姻緣、每週運勢、雙人合盤及易道宗師御批雙向問道。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
